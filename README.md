@@ -11,7 +11,7 @@ A modern and secure password generator built using **HTML, CSS, and JavaScript**
 - Responsive & modern UI
 
 ## 🚀 Live Demo
-(Add GitHub Pages link here)
+https://nitish19work-ctrl.github.io/password-generator/
 
 ## 🛠 Tech Stack
 - HTML
