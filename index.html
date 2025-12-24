@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Generate a <br><span>Secure Password</span></h1>
+
+  <div class="display">
+    <input type="text" id="password" readonly>
+    <button class="copy-btn" onclick="copyPassword()">📋</button>
+  </div>
+
+  <!-- Strength -->
+  <div class="strength">
+    <div id="strength-bar"></div>
+    <p id="strength-text">Strength</p>
+  </div>
+
+  <!-- Length -->
+  <div class="option">
+    <label>Password Length: <span id="len-val">12</span></label>
+    <input type="range" min="8" max="24" value="12" id="length">
+  </div>
+
+  <!-- Checkboxes -->
+  <div class="options">
+    <label><input type="checkbox" id="upper" checked> Uppercase</label>
+    <label><input type="checkbox" id="lower" checked> Lowercase</label>
+    <label><input type="checkbox" id="number" checked> Numbers</label>
+    <label><input type="checkbox" id="symbol" checked> Symbols</label>
+    <label><input type="checkbox" id="exclude"> Exclude Similar</label>
+  </div>
+
+  <button class="generate" onclick="createPassword()">Generate Password</button>
+
+  <!-- History -->
+  <div class="history">
+    <h3>Recent Passwords</h3>
+    <ul id="history"></ul>
+  </div>
+</div>
+
+<div class="toast" id="toast">Copied!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
